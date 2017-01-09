@@ -1,0 +1,26 @@
+{
+  "name": "workflow",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "andris varadi <andris@varadi.tv>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./components/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "gsap": "^1.19.0",
+    "owl.carousel": "^2.2.0",
+    "scrollmagic": "^2.0.5",
+    "font-awesome": "^4.7.0",
+    "animate.css": "^3.5.2"
+  }
+}
