@@ -49,7 +49,7 @@ gulp.task('uglifyPlugins', function() {
 
 // Minify Plugins CSS files
 gulp.task('minifyPlugins', function() {
-  return gulp.src(['components/libs/bootstrap/dist/css/bootstrap.css', 'components/libs/owl.carousel/dist/assets/owl.carousel.css', 'components/libs/scrollmagic/css/font-awesome.css' ])
+  return gulp.src(['components/libs/bootstrap/dist/css/bootstrap.css', 'components/libs/owl.carousel/dist/assets/owl.carousel.css', 'components/libs/font-awesome/css/font-awesome.css' ])
 /*    .pipe(rename({
       suffix: ".min",
       extname: ".css"
