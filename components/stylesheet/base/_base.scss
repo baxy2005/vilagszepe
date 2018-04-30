@@ -3,3 +3,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.owl-carousel.off {
+    display: flex;
+		flex-wrap: wrap;
+}

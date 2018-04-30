@@ -10,10 +10,12 @@ align-items: $align-items;
 justify-content: $justify-content;
 }
 
-@mixin absoluteCenter {
-	position: absolute;
-	left: 0;
-	right: 0;
+@mixin absoluteCenter ($position, $top, $right, $bottom, $left) {
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
 	margin-left:  auto;
 	margin-right: auto;
 }

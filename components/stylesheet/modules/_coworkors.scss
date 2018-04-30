@@ -1,0 +1,28 @@
+
+#munkatarsaink {
+	background-color:   $fade-secondary;
+}
+.card--coworkeres {
+	background-color: white;
+	border: none;
+	border-radius: 0;
+	margin-bottom: 4rem;
+	img {
+	@include absoluteCenter (absolute, -4.7rem, 0,0,0);
+	border: 6px solid  $fade-secondary;
+	}
+	.card-body {
+		padding-top: 6rem;
+	}
+}
+
+
+.left {
+	flex:0 0 14rem;
+	background-color: blue;
+}
+.right {
+	flex: 0 1 100%;
+	background-color: gray;
+	overflow: hidden;
+}

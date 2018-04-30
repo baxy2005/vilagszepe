@@ -1,7 +1,8 @@
 
 //colors
 $color-primary: #E45639;
-$color-secondary: #F8CF22;
+$color-blue: #86BCE9;
+$color-secondary: #86BCE9;
 $color-tertiary: #796B9C;
 $color-black: #000000;
 $color-white: #FFFFFF;
@@ -12,6 +13,8 @@ $dark-color-gray: lighten($color-black, 20% );
 $mid-color-gray: lighten($color-black, 50% );
 $mid-color2-gray: lighten($color-black, 60% );
 $text-color-gray: lighten($color-black, 30% );
+
+ $fade-secondary: lighten($color-secondary, 17%);
 
 $light-color-primary: lighten($color-primary, 10% );
 $dark-color-primary: darken($color-primary, 10% );
@@ -28,7 +31,7 @@ $light-5-color-white: rgba($color-white,0.20);
 $fade-color-primary: tint( $color-primary, 20%);
 $fade-color-2-primary: tint( $color-primary, 40%);
 
-$fade-color-secondary: tint( $color-secondary, 50%);
+$fade-color-secondary: lighten( $color-secondary, 40%);
 
 $opacity-color-primary: rgba($color-primary,0.95);
 $opacity2-color-primary: rgba($color-primary,0.80);

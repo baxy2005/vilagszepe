@@ -1,0 +1,10 @@
+.navbar-default .navbar-offcanvas, .navmenu-default {
+  background-color: red;
+}
+.navbar-offcanvas, .navmenu {
+width: 14rem !important;
+}
+
+.navbar-offcanvas, .navmenu-fixed-left, .navmenu-fixed-right {
+  bottom : auto;
+}
