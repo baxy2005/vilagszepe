@@ -12,16 +12,85 @@
   </head>
   <body>
 <main>
-  <div class="d-flex">
-    <div class="left bg-light">
+  <div class="d-flex grid">
+    <div class="grid-left bg-light">
       <header>
         <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" role="navigation">
-          <a class="navmenu-brand" href="#">Brand</a>
+          <div class="header">
+            <div class="header__lang">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Hun</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Eng</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ger</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__brand text-center">
+              <a class="navmenu-brand" href="#">
+                <i> <img src="images/brand-spiral.svg" alt="vilagszep"></i>
+                <h3>Világszép</h3>
+                <small>Alapítvány gyermekvédelmi <br>
+                  gondoskodásban élő <br>
+                  gyerekekért
+                </small>
+              </a>
+            </div>
+            <div class="header__slogen text-center">
+              <p>EGY Gyerek
+              <span>EGY EGész</span>
+              <span>VILáG</span>
+              </p>
+            </div>
+          </div>
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+            <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Rólunk
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Intézményeink
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Így segítünk
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Így segíthetsz
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <a class="nav-item nav-link" href="#">Galéria</a>
+            <a class="nav-item nav-link" href="#">Kapcsolat</a>
           </div>
         </nav>
         <div class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light bg-light">
@@ -31,7 +100,7 @@
         </div>
       </header>
     </div>
-    <div class="right">
+    <div class="grid-right">
     <section id="munkatarsaink">
       <div id="owl_about_main_slider" class="owl-carousel">
           <div class="col col-sm-3">
@@ -91,9 +160,9 @@
   </div>
 </div>
 </main>
-<footer class="d-flex">
-  <div class="left"></div>
-  <div class="right">
+<footer class="d-flex grid">
+  <div class="grid-left">brand</div>
+  <div class="grid-right">
     <div class="row text-center">
     <div class="col-sm-4">andris</div>
     <div class="col-sm-4">andris</div>

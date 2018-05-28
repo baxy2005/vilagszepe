@@ -1,17 +1,17 @@
-
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700&subset=latin-ext');
 
 $theme-colors: (
   "primary": #49789F,
-  "secondary": #86BCE9
+  "secondary": #86BCE9,
 );
 
-@import "bootstrap";
+@import "modules/bootstrap";
 @import "base/variables";
 @import "base/mixins";
 @import "base/base";
 @import "layout/header";
 @import "layout/footer";
+@import "layout/grid";
 @import "modules/buttons";
-@import "modules/navigation";
-@import "modules/coworkors";
 @import "layout/navigation";
+@import "modules/coworkors";

@@ -2,9 +2,12 @@
   background-color: red;
 }
 .navbar-offcanvas, .navmenu {
-width: 14rem !important;
+width: 18rem !important;
 }
 
 .navbar-offcanvas, .navmenu-fixed-left, .navmenu-fixed-right {
-  bottom : auto;
+  bottom: 0;
+  @include media-breakpoint-up(lg) {
+    bottom: auto;
+  }
 }
