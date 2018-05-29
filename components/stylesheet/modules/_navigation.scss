@@ -17,3 +17,6 @@ width: 18rem !important;
   text-transform: uppercase;
   font-size: 1.375rem;
 }
+.dropdown-toggle {
+  @include flexContainer (row, center, space-between)
+}
