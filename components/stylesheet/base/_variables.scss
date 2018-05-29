@@ -6,7 +6,7 @@ $color-secondary: #86BCE9;
 $color-tertiary: #796B9C;
 $color-black: #000000;
 $color-white: #FFFFFF;
-
+$color-light-gray: #ECEFF2;
 
 $light-color-gray: lighten($color-black, 80% );
 $dark-color-gray: lighten($color-black, 20% );
@@ -37,7 +37,7 @@ $opacity-color-primary: rgba($color-primary,0.95);
 $opacity2-color-primary: rgba($color-primary,0.80);
 
 //fonts
-$font-primary: evelethclean_regular, sans-serif;
+$font-primary: 'Nunito', sans-serif;
 $font-primary-thin: evelethclean_thin, sans-serif;
 $font-secondary: ProximaNova-Medium, sans-serif;
 $font-primaryLight: Sica-Light, sans-serif;

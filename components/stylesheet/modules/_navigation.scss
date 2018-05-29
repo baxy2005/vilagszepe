@@ -1,3 +1,19 @@
-// .navbar {
-//   background-color: $primary;
-// }
+.navbar-default .navbar-offcanvas, .navmenu-default {
+  background-color: $color-light-gray;
+}
+.navbar-offcanvas, .navmenu {
+width: 18rem !important;
+}
+
+.navbar-offcanvas, .navmenu-fixed-left, .navmenu-fixed-right {
+  bottom: 0;
+  @include media-breakpoint-up(lg) {
+    bottom: auto;
+  }
+}
+
+.navbar-nav {
+  padding: 0 2em;
+  text-transform: uppercase;
+  font-size: 1.375rem;
+}

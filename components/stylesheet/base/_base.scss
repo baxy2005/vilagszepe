@@ -2,6 +2,8 @@ body{
 	text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+	font-family: $font-primary;
+	font-weight: 400;
 }
 .owl-carousel.off {
     display: flex;
