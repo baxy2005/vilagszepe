@@ -6,13 +6,11 @@
 }
 .grid-left {
 	flex:auto;
-	background-color: blue;
   @include media-breakpoint-up(lg) {
     flex:0 0 18rem;
   }
 }
 .grid-right {
 	flex: 0 1 100%;
-	background-color: gray;
 	overflow: hidden;
 }

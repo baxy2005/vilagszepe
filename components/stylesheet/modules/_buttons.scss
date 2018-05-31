@@ -1,0 +1,12 @@
+.btn-social {
+  border-radius: 100px;
+  background-color: $color-gray-55;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  .fa {
+    @include flexContainer(row, center, center);
+    height: 40px;
+  }
+}

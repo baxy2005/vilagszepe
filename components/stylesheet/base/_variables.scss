@@ -3,16 +3,20 @@
 $color-primary: #49789F;
 $color-blue: #86BCE9;
 $color-secondary: #86BCE9;
-$color-tertiary: #796B9C;
+$color-tertiary: #868E96;
 $color-black: #000000;
 $color-white: #FFFFFF;
 $color-light-gray: #ECEFF2;
+$color-dark-gray: #6D7781;
 
 $light-color-gray: lighten($color-black, 80% );
 $dark-color-gray: lighten($color-black, 20% );
 $mid-color-gray: lighten($color-black, 50% );
 $mid-color2-gray: lighten($color-black, 60% );
 $text-color-gray: lighten($color-black, 30% );
+
+$color-gray-30: rgba($color-tertiary,0.30);
+$color-gray-55: rgba($color-tertiary,0.55);
 
  $fade-secondary: lighten($color-secondary, 17%);
 

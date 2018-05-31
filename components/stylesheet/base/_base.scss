@@ -9,3 +9,12 @@ body{
     display: flex;
 		flex-wrap: wrap;
 }
+.bg-dark-gray {
+	background-color: $color-dark-gray;
+}
+.bg-gray {
+	background-color: $color-tertiary;
+}
+.bg-mid-gray{
+	background-color: $color-light-gray;
+}

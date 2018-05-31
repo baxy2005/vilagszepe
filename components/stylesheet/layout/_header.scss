@@ -44,13 +44,14 @@
     a {
       color: white;
       opacity: .45;
+      @include hover-focus-active() {
+        opacity: 1;
+      };
     }
     a.active {
       opacity: 1;
     }
-    a:hover {
-      opacity: 1;
-    }
+
   }
   &__slogen {
     p {

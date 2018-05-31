@@ -11,12 +11,50 @@ width: 18rem !important;
     bottom: auto;
   }
 }
-
+.navmenu-default {
+  border:none;
+}
+/*-------------------------------------------
+side main navigation
+-------------------------------------------*/
 .navbar-nav {
-  padding: 0 2em;
+  padding: 0 1.5em;
   text-transform: uppercase;
   font-size: 1.375rem;
+  margin-bottom: 24px;
+  .nav-item {
+    border-bottom: 1px $color-gray-30 solid;
+  }
+  .nav-link {
+    padding: .47rem 0rem;
+    color: $color-tertiary;
+    letter-spacing: .5px;
+    @include hover-focus-active() {
+      color: $color-primary;
+    };
+  }
+  .dropdown-menu {
+    position: relative !important;
+    border-radius: 0px;
+    border: none;
+    top: 0px;
+    text-transform: capitalize;
+    transform: none!important;
+    }
+  .dropdown-toggle {
+    @include flexContainer (row, center, space-between)
+    &:after {
+      color: $color-gray-30;
+    }
+  }
+  .dropdown-item {
+    padding: .50rem 1.5rem;
+  }
 }
-.dropdown-toggle {
-  @include flexContainer (row, center, space-between)
+.nav--social {
+  padding: 0 1.5em 1.5rem 1.5rem;
+  .nav-item {
+    border-bottom: 0px;
+    margin-right: .5rem;
+  }
 }
