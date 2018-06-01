@@ -1,9 +1,27 @@
 footer {
   min-height: 288px;
+  color: white;
+  h5 {
+    font-weight: 300;
+    text-transform: uppercase;
+    strong {
+      font-weight: 700;
+    }
+  }
   .navmenu-brand {
     i img {
       witdh: 105px;
       height: 68px;
     }
+  }
+}
+.nav--footer {
+  .nav-link {
+    color: $light-2-color-white;
+    font-size: 0.875rem;
+    padding: .06rem .2rem;
+    @include hover-focus-active(){
+      color: white;
+    };
   }
 }
