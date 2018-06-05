@@ -1,12 +1,17 @@
+var brandFull = $('.header__brand').html();
+// var brandLogo = $('.navmenu i img')
+
 $(document).ready(function() {
-  var brand = $('.navmenu h3').html("világszép");
-  var brandLogo = $('.navmenu i img').html('<img src="images/brand-spiral.svg" alt="vilagszep">')
+
 
 if ( $(window).width() < 992 ) {
   console.log('hello')
-  $('.navbar').append(brandLogo);
-  $('.navbar').append(brand);
-  console.log(brand)
+  // $(brandLogo).clone().appendTo('.navbar')
+  $(brandFull).clone().appendTo('.navbar');
+  $('.navbar .navmenu-brand small').remove()
+
+//  $('.navbar').append(brandLogo);
+//  $('.navbar').append(brand);
 }
 
 
@@ -38,6 +43,16 @@ $(window).resize(function() {
     if ($(window).width() > 992) {
       $('.overlay').hide(0, false);
       $('body').removeClass('bs.offcanvas');
+      $('.navbar .navmenu-brand').remove()
+    }
+    if ($(window).width() < 992) {
+      var brandcheck = $(".navbar .navmenu-brand")
+      if (brandcheck.length == 0){
+        console.log('brandcheck.length')
+        $(brandFull).clone().appendTo('.navbar')
+        $('.navbar .navmenu-brand small').remove()
+      }
+
     }
 });
 
