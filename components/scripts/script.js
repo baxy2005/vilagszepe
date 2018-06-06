@@ -4,8 +4,30 @@ var brandFull = $('.header__brand').html();
 $(document).ready(function() {
 
 
+/*-------------------------------------------
+  ScrollMagic
+-------------------------------------------*/
+
+// init ScrollMagic
+var controller = new ScrollMagic.Controller();
+// set timeline
+
+var ourScene = new ScrollMagic.Scene({
+  // triggerElement: '#project01 img',
+  triggerHook: 1,
+  offset: 10
+})
+.setClassToggle('.header', 'header-small') // add class to project01
+.addIndicators({
+  name: 'fade scene',
+  colorTrigger: 'black',
+  colorStart: '#75C695',
+  colorEnd: 'pink'
+}) // this requires a plugin
+.addTo(controller);
+
+
 if ( $(window).width() < 992 ) {
-  console.log('hello')
   // $(brandLogo).clone().appendTo('.navbar')
   $(brandFull).clone().appendTo('.navbar');
   $('.navbar .navmenu-brand small').remove()
@@ -13,8 +35,6 @@ if ( $(window).width() < 992 ) {
 //  $('.navbar').append(brandLogo);
 //  $('.navbar').append(brand);
 }
-
-
   if ( $(window).width() < 540 ) {
     startCarousel();
   } else {

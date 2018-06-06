@@ -45,3 +45,12 @@ background-size: cover;
     @content;
   }
 }
+
+@mixin titleLight {
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 1.3rem;
+	font-size: 40px;
+	color: $color-primary;
+	letter-spacing: 1px;
+}

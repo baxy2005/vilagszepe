@@ -30,7 +30,6 @@ side header
   i img {
     width: 83px;
     height: 53px;
-    margin-bottom: 3.125rem;
     transition: transform ease .5s;
   }
   &:hover, &:focus {
@@ -59,13 +58,14 @@ side header
   color: white;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-between;
+  transition: height 1s ease;
   &__brand {
     i img {
       width: 83px;
       height: 53px;
-      margin-bottom: 3.125rem;
+      margin-top: 1rem;
+      margin-bottom: 2.125rem;
       transition: transform ease .5s;
     }
   }
@@ -83,6 +83,7 @@ side header
 
   }
   &__slogen {
+    transition: all 1s ease;
     p {
       font-family: 'Nunito', sans-serif;
       font-weight: 300;
@@ -105,3 +106,18 @@ side header
     }
   }
 }
+.header-small {
+	height: 288px;
+  .header__slogen {
+    opacity: 0;
+  }
+  // .header__brand {
+  //   i img {
+  //     margin-top: 1rem;
+  //     margin-bottom: 2.125rem;
+  //   }
+  // }
+}
+// .header__slogen-close {
+//   opacity: 0;
+// }
