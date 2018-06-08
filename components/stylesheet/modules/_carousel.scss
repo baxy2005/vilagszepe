@@ -1,0 +1,17 @@
+.section--carousel {
+	@include noGutter (-1px, 1px);
+	h1 {
+		margin-bottom: 3.355rem;
+	}
+	.item{
+		background-color: white;
+		@include flexContainer(row, center, center);
+		padding: 2.5rem;
+		a{
+			filter: grayscale(100%);
+			@include hover-focus {
+				filter: grayscale(0);
+			}
+		}
+	}
+}

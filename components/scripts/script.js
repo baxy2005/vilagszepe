@@ -3,7 +3,14 @@ var brandFull = $('.header__brand').html();
 
 $(document).ready(function() {
 
-
+// $('.item').on('mouseenter', function() {
+//
+//   $(this).css('opacity', '.4')
+//
+//
+// // $(this).css('opacity', '1')
+// // $('.item').css('opacity', '.4')
+// });
 /*-------------------------------------------
   ScrollMagic
 -------------------------------------------*/
@@ -77,7 +84,7 @@ $(window).resize(function() {
 });
 
 function startCarousel(){
-  $("#owl_about_main_slider").owlCarousel({
+  $(".owl-carousel").owlCarousel({
      navigation : true, // Show next and prev buttons
      slideSpeed : 500,
      margin:0,
@@ -90,6 +97,7 @@ function startCarousel(){
      itemsMobile : false,
      loop:true,
      nav:true,
+     lazyLoad:true,
      navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"]
   });
 }
