@@ -14,3 +14,12 @@
 	flex: 0 1 100%;
 	overflow: hidden;
 }
+
+#munkatarsaink {
+  .col-xl-3 {
+      @include media-breakpoint-up(xl) {
+    flex: 0 0 20%;
+    max-width: 20%;
+    }
+  }
+}

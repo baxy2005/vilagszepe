@@ -3,14 +3,12 @@ var brandFull = $('.header__brand').html();
 
 $(document).ready(function() {
 
-// $('.item').on('mouseenter', function() {
-//
-//   $(this).css('opacity', '.4')
-//
-//
-// // $(this).css('opacity', '1')
-// // $('.item').css('opacity', '.4')
-// });
+
+  $(".section--carousel .item").hover(function(e) {
+      e.preventDefault();
+      $(this).parents('.col').siblings().toggleClass('opacity');
+  });
+
 /*-------------------------------------------
   ScrollMagic
 -------------------------------------------*/
@@ -42,7 +40,7 @@ if ( $(window).width() < 992 ) {
 //  $('.navbar').append(brandLogo);
 //  $('.navbar').append(brand);
 }
-  if ( $(window).width() < 540 ) {
+  if ( $(window).width() < 576 ) {
     startCarousel();
   } else {
     $('.owl-carousel').addClass('off');
@@ -60,7 +58,7 @@ if ( $(window).width() < 992 ) {
   });
 });
 $(window).resize(function() {
-    if ( $(window).width() < 540 ) {
+    if ( $(window).width() < 576 ) {
       $('.owl-carousel').removeClass('off');
       startCarousel();
     } else {
@@ -90,15 +88,14 @@ function startCarousel(){
      margin:0,
      paginationSpeed : 400,
      autoplay:false,
-     items : 1,
+     items : 1.5,
      itemsDesktop : false,
      itemsDesktopSmall : false,
      itemsTablet: false,
      itemsMobile : false,
      loop:true,
-     nav:true,
-     lazyLoad:true,
-     navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"]
+     nav:false,
+     // navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"]
   });
 }
 function stopCarousel() {

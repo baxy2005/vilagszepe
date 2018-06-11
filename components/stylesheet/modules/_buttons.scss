@@ -1,3 +1,15 @@
+.btn {
+	text-transform: uppercase;
+}
+.btn-primary {
+	padding: .6rem 5.3rem;
+	font-size: 1.125rem;
+	box-shadow: $box-shadow-lg;
+}
+.btn-secondary {
+	box-shadow: $box-shadow;
+}
+
 .btn-social {
   border-radius: 100px;
   background-color: $color-gray-55;
@@ -5,6 +17,7 @@
   width: 40px;
   height: 40px;
   padding: 0;
+  box-shadow: none;
   .fa {
     @include flexContainer(row, center, center);
     height: 40px;

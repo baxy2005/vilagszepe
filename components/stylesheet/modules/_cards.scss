@@ -1,6 +1,6 @@
 
 #munkatarsaink {
-
+	padding-bottom: 0;
 }
 
 /*-------------------------------------------
@@ -11,13 +11,54 @@ coworkers
 	background-color: white;
 	border: none;
 	border-radius: 0;
-	margin-bottom: 4rem;
+	height: 100%;
+//	margin-bottom: 4rem;
 	img {
-	@include absoluteCenter (absolute, -4.7rem, 0,0,0);
+	// @include absoluteCenter (absolute, -3.8rem, 0,0,0);
+	position: relative;
+	// margin-top: -4.5rem;
 	border: 6px solid  $fade-secondary;
+	margin-top: -3.9375rem;
+	width: 7.875rem !important;
+	height: 7.875rem;
+ // @include media-breakpoint-up(sm) {
+	//  margin-top: -3.9375rem;
+	//  width: 7.875rem !important;
+	//  height: 7.875rem;
+	//  };
 	}
 	.card-body {
-		padding-top: 6rem;
+		// padding-top: 5rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+		@include media-breakpoint-up (sm) {
+			flex-direction: row;
+		};
+		h5 {
+			color: $color-primary;
+			font-size: 1.5rem;
+			font-weight:300;
+			margin-bottom: .5rem;
+		}
+		p {
+			color: $color-tertiary;
+			align-self: center;
+			line-height: 1.2;
+			width: 100%
+		}
+		.btn-sm {
+			padding: .25rem 1.3rem;
+			font-size: .8rem;
+		}
+	.btn-secondary {
+		align-self: stretch;
+		color: white;
+		@include media-breakpoint-up (sm) {
+			align-self: flex-end;
+		};
+	}
 	}
 }
 
