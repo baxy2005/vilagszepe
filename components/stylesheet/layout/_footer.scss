@@ -14,6 +14,25 @@ footer {
       height: 68px;
     }
   }
+  .grid-left, .grid-right {
+    @include flexContainer(row, center, center,);
+  }
+  .grid-left {
+    min-height: 8rem;
+
+  }
+  .grid-left {
+    order:2;
+    @include media-breakpoint-up(lg) {
+      order: 1;
+    };
+  }
+  .grid-right {
+    order:1;
+    @include media-breakpoint-up(lg) {
+      order:2;
+    };
+  }
 }
 .nav--footer {
   .nav-link {

@@ -47,3 +47,25 @@
 		margin-bottom: 5.5rem;
 	};
 }
+/*-------------------------------------------
+all device caroucel (gallery)
+-------------------------------------------*/
+.owl-all-device {
+	.owl-next, .owl-prev {
+		height: 3rem;
+		width: 3rem;
+		background-color: $color-primary !important;
+		border: none;
+		i {
+			color: white;
+			font-size: 2rem;
+		}
+	}
+	.owl-nav {
+		width: 95%;
+		display: flex;
+    justify-content: space-between;
+		@include absoluteCenter (absolute, 47%, 0, 0, 0);
+		height: 3rem;
+	}
+}

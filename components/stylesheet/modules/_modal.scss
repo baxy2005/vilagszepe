@@ -34,3 +34,24 @@
 		font-weight: 300;
 	}
 }
+/*-------------------------------------------
+gallery modal
+-------------------------------------------*/
+
+
+.modal-dialog--gallery {
+	max-width: 95%;
+	@include media-breakpoint-up (sm) {
+		max-width: 70%;
+	};
+	.modal-content{
+		border-radius: 0;
+		.modal-body {
+			padding: 0;
+		}
+		.modal-footer {
+			border-top: none;
+			@include flexContainer (row, center, space-between);
+		}
+	}
+}

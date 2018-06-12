@@ -32,6 +32,20 @@ var ourScene = new ScrollMagic.Scene({
 .addTo(controller);
 
 
+$(".owl-all-device").owlCarousel({
+   navigation : true, // Show next and prev buttons
+   slideSpeed : 500,
+   margin:0,
+   paginationSpeed : 400,
+   autoplay:false,
+   items : 1,
+   loop:true,
+   nav:true,
+   lazyLoad:true,
+   navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"]
+});
+
+
 if ( $(window).width() < 992 ) {
   // $(brandLogo).clone().appendTo('.navbar')
   $(brandFull).clone().appendTo('.navbar');
@@ -43,7 +57,7 @@ if ( $(window).width() < 992 ) {
   if ( $(window).width() < 576 ) {
     startCarousel();
   } else {
-    $('.owl-carousel').addClass('off');
+    $('.owl-dis').addClass('off');
   }
   // overlay
   $('.navmenu').on('show.bs.offcanvas', function() {
@@ -59,7 +73,7 @@ if ( $(window).width() < 992 ) {
 });
 $(window).resize(function() {
     if ( $(window).width() < 576 ) {
-      $('.owl-carousel').removeClass('off');
+      $('.owl-dis').removeClass('off');
       startCarousel();
     } else {
       stopCarousel();
@@ -99,10 +113,12 @@ function startCarousel(){
   });
 }
 function stopCarousel() {
-  var owl = $('.owl-carousel');
+  var owl = $('.owl-dis');
   owl.trigger('destroy.owl.carousel');
   owl.addClass('off');
 }
+
+
 
 // simulate modal opening
 // $('.nav-link').click(function() {
