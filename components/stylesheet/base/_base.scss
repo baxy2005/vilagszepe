@@ -52,6 +52,9 @@ typo
 h1 {
 	@include titleLight;
 }
+h3 {
+	text-transform: uppercase;
+}
 .opacity {
 	opacity: .3;
 }

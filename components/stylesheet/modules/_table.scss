@@ -41,3 +41,12 @@
 		}
 	}
 }
+.table-data {
+	 th, thead th {
+		border: none;
+	}
+	td {
+		border-top: none;
+		border-bottom: 1px solid #dee2e6;
+	}
+}
