@@ -1,0 +1,16 @@
+.nav-tabs--main {
+	border-bottom: none;
+	.nav-link {
+		border-radius: 0;
+		border: none;
+		text-transform: uppercase;
+		padding: 1rem 1.2rem;
+	}
+}
+
+.tab-content--main {
+	background-color: white;
+	.tab-pane {
+		padding: 3rem;
+	}
+}

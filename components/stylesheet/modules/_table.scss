@@ -41,12 +41,20 @@
 		}
 	}
 }
+
+
 .table-data {
+	margin-bottom: 2rem;
 	 th, thead th {
 		border: none;
 	}
 	td {
 		border-top: none;
 		border-bottom: 1px solid #dee2e6;
+		line-height: 1.2;
+		padding: .5rem;
+	}
+	&:last-child {
+		margin-bottom: 0
 	}
 }

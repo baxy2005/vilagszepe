@@ -23,6 +23,9 @@ bacground colors
 .bg-mid-gray{
 	background-color: $color-light-gray;
 }
+.text-muted {
+	color: $color-tertiary !important
+}
 .overlay {
 	@include absoluteCenter(fixed, 0, 0, 0, 0,)
 	background: rgba(0, 0, 0, 0.6);
@@ -51,9 +54,14 @@ typo
 
 h1 {
 	@include titleLight;
+	margin-bottom: 2rem;
 }
 h3 {
 	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+p {
+	margin-bottom: 2rem;
 }
 .opacity {
 	opacity: .3;

@@ -153,7 +153,45 @@ gallery card
 contact card
 -------------------------------------------*/
 
-.card.card--right-fixed {
-	 flex: 0 0 28.999rem;
-	 background-color:$color-light-gray;
+.card.card--left {
+	flex: 0 0 50%;
+	border:0;
+	@include media-breakpoint-up (xl) {
+		flex: 1 0 0%;
+	};
+	.card-body {
+		padding: 0
+	}
 }
+
+.card.card--right {
+	 flex: 1 0 0%;
+	 background-color:$color-light-gray;
+	 @include media-breakpoint-up(xl) {
+		 flex: 0 0 28.999rem;
+	 };
+	 .card-body {
+		 padding: 2rem;
+		@include media-breakpoint-up (xl) {
+			padding: 2rem 5rem;
+		} ;
+	 }
+	 .btn-primary {
+		 padding: .6rem 0;
+		 width: 100%;
+	 }
+}
+
+/*-------------------------------------------
+accordion card
+-------------------------------------------*/
+
+
+	.card.card--accordion{
+		border-radius: 0;
+		.card-header {
+			border-radius: 0;
+			border: none;
+			background-color: transparent;
+		}
+	}

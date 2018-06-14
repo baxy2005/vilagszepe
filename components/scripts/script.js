@@ -3,7 +3,6 @@ var brandFull = $('.header__brand').html();
 
 $(document).ready(function() {
 
-
   $(".section--carousel .item").hover(function(e) {
       e.preventDefault();
       $(this).parents('.col').siblings().toggleClass('opacity');
@@ -44,6 +43,9 @@ $(".owl-all-device").owlCarousel({
    lazyLoad:true,
    navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"]
 });
+
+
+ // fakewaffle.responsiveTabs(['xs', 'sm']);
 
 
 if ( $(window).width() < 992 ) {
