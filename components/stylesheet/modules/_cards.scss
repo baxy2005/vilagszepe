@@ -189,9 +189,35 @@ accordion card
 
 	.card.card--accordion{
 		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid rgba(0,0,0,0.125);
 		.card-header {
 			border-radius: 0;
-			border: none;
 			background-color: transparent;
+			padding: .2rem 0;
+			border-top: 1px solid rgba(0,0,0,0.125);
+			border-bottom: none;
+			h3 {
+				@include flexContainer(row, center, space-between);
+			}
+			i {
+				color: $color-secondary;
+			}
+			.btn-link {
+				color: inherit;
+				font-size: inherit;
+				padding: 0;
+				white-space: normal;
+				text-align: left;
+			}
+		}
+		.card-body {
+			padding: 0 0 1rem 0;
+			P {
+				margin-bottom: .8rem;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 		}
 	}

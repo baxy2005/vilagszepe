@@ -51,14 +51,25 @@ bacground colors
 /*-------------------------------------------
 typo
 -------------------------------------------*/
+h1, h2, h3 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h1, h2, {
+	color: $color-primary;
+	margin-bottom: 2rem;
+}
 
 h1 {
 	@include titleLight;
 	margin-bottom: 2rem;
 }
 h3 {
-	text-transform: uppercase;
 	margin-bottom: 1rem;
+}
+h2 {
+
 }
 p {
 	margin-bottom: 2rem;
