@@ -64,6 +64,10 @@ h1, h2, {
 h1 {
 	@include titleLight;
 	margin-bottom: 2rem;
+	font-size: 1.7rem;
+	@include media-breakpoint-up(md) {
+		font-size: 2.5rem;
+	};
 }
 h3 {
 	margin-bottom: 1rem;

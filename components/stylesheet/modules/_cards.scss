@@ -3,7 +3,7 @@
 	padding-bottom: 0;
 }
 
-.card--horizontal, .card--main, .card--coworkeres, .card.card--accordion {
+.card--horizontal, .card--main, .card--coworkeres, .card.card--accordion, .card--small {
 	border: none;
 	border-radius: 0;
 }
@@ -234,8 +234,13 @@ accordion card
 	.card-image {
 		background-repeat: none;
 		background-size: cover;
-		flex: 1 0 50%
+		flex: 1 0 50%;
+		height: 320px;
+		background-position: center;
 		// width: 576px;
+		@include media-breakpoint-up (sm) {
+			height: auto;
+		};
 	}
 	.card-image--four {
 		background-image: url("../images/feelings/vilagszep-feeling-08.png");
@@ -250,19 +255,27 @@ accordion card
 		background-image: url("../images/feelings/vilagszep-feeling-05.png");
 	}
 	.card-body {
-		flex: 1 0 50;
-		padding: 4rem;
+		flex: 1 0 50%;
+		// padding: 4rem;
 		@include flexContainer(column, flex-start, space-between);
 		h1 {
 			margin: 0;
 			text-transform: unset;
 			color: $color-tertiary;
+			margin-bottom: 1rem;
+			@include media-breakpoint-up(sm) {
+				margin: 0;
+			};
 		}
 		small {
 			font-size: 1.25rem;
 			color: $color-primary;
 			letter-spacing: 5px;
 			text-transform: uppercase;
+			margin-bottom: 1rem;
+			@include media-breakpoint-up(sm) {
+				margin: 0;
+			};
 		}
 	}
 }
@@ -271,5 +284,29 @@ accordion card
 	@include media-breakpoint-up (sm) {
 		flex-direction: row-reverse;
 	};
+	.m-auto {
+		margin: 0 auto !important;
+	}
+}
 
+/*-------------------------------------------
+opening cards small
+-------------------------------------------*/
+
+.card.card--small {
+	// i {
+	// 	margin-bottom: .7rem;
+	// }
+
+	.card-img-top {
+		margin-bottom: .8rem;
+	}
+	.card-body {
+		padding: 0;
+		flex: 0 0 auto;
+		align-items: initial;
+		h1 {
+			margin-bottom: 1.4rem;
+		}
+	}
 }
