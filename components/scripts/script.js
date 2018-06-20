@@ -7,6 +7,7 @@ $(document).ready(function() {
       e.preventDefault();
       $(this).parents('.col').siblings().toggleClass('opacity');
   });
+  $('.nav-tabs').responsiveTabs();
 
 /*-------------------------------------------
   ScrollMagic

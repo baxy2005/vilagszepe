@@ -38,3 +38,8 @@
 .btn.bg-danger {
 	border-color: $red;
 }
+.btn-icon {
+	min-width: 3.5rem;
+	height: 2.5rem;
+	@include flexContainer (row, center, center);
+}

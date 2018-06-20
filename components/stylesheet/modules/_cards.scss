@@ -3,7 +3,7 @@
 	padding-bottom: 0;
 }
 
-.card--horizontal, .card--main, .card--coworkeres, .card.card--accordion, .card--small {
+.card--horizontal, .card--main, .card--coworkeres, .card.card--accordion, .card--small, .card--color-bg {
 	border: none;
 	border-radius: 0;
 }
@@ -309,4 +309,24 @@ opening cards small
 			margin-bottom: 1.4rem;
 		}
 	}
+}
+
+/*-------------------------------------------
+monay cards
+-------------------------------------------*/
+
+.card--color-bg {
+ border-radius: .25rem;
+ .card-body {
+	 @include flexContainer (row, center, space-between) ;
+	 border-radius: .25rem;
+	 .btn-icon {
+		 background-color: white;
+		 border: white;
+		 i {
+			 color: $danger
+		 }
+	 }
+	 margin-bottom: .25rem;
+ }
 }

@@ -19,3 +19,13 @@
 		@include noGutter (-2px, 2px);
 	}
 }
+
+/*-------------------------------------------
+responsive nav-tabs
+-------------------------------------------*/
+
+ .responsivetabs-more {
+	 .dropdown-toggle {
+		  @extend .nav-link ;
+	 }
+ }
