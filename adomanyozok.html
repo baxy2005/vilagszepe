@@ -125,71 +125,144 @@
     <section class="section-padding">
       <div class="row">
         <div class="col p-5 bg-mid-gray">
-          <h1 class="text-center">Címsor ha kell</h1>
+          <h1 class="text-center">Adományozok</h1>
           <ul class="nav nav-tabs nav-tabs--main responsive" role="tablist">
           	<li class="nav-item">
-          		<a class="nav-link active" data-toggle="tab" href="#adomanyozas" role="tab">Adományozás</a>
+          		<a class="nav-link active" data-toggle="tab" href="#adomanyozas" role="tab">Elektornikus</a>
           	</li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#kozvetlenutalas" role="tab">közvetlen utalás</a>
             </li>
-          	<li class="nav-item">
-          		<a class="nav-link" data-toggle="tab" href="#egyszazalek" role="tab">1 % felajánlása </a>
-          	</li>
-          	<li class="nav-item">
-          		<a class="nav-link" data-toggle="tab" href="#onkentesseg" role="tab">önkéntesség</a>
-          	</li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#bereljkiminket" role="tab">bérelj ki minket</a>
-            </li>
           </ul><!-- Tab panes -->
           <div class="tab-content tab-content--main responsive">
           	<div class="tab-pane fade show active" id="adomanyozas" role="tabpanel">
-              <h2>Adományozás</h2>
-              <p>Az Alapítvány működési költségeit a Wirtz és Walter házaspár biztosítja és finanszírozza, ezért minden további adomány közvetlenül a gyerekeket segíti.</p>
               <div class="row no-gutters">
-                <div class="col-md-12 col-xl-6">
-                  <div class="card card--color-bg">
-                    <div class="card-body bg-secondary">
-                      <h1 class="text-white m-0">2 000 Ft</h1>
-                      <a href="#" class="btn btn-primary btn-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div> <!--card-->
-                </div><!-- card grid-->
-                <div class="col-md-12 col-xl-6">
-                  <div class="card card--color-bg">
-                    <div class="card-body bg-secondary">
-                      <h1 class="text-white m-0">5 000 Ft</h1>
-                      <a href="#" class="btn btn-primary btn-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div> <!--card-->
-                </div><!-- card grid-->
-                <div class="col-md-12 col-xl-6">
-                  <div class="card card--color-bg">
-                    <div class="card-body bg-primary">
-                      <h1 class="text-white m-0">10 000 Ft</h1>
-                      <a href="#" class="btn btn-primary btn-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div> <!--card-->
-                </div><!-- card grid-->
-                <div class="col-md-12 col-xl-6">
-                  <div class="card card--color-bg">
-                    <div class="card-body bg-primary">
-                      <h1 class="text-white m-0">20 000 Ft</h1>
-                      <a href="#" class="btn btn-primary btn-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div> <!--card-->
-                </div><!-- card grid-->
-                <div class="col-12 text-center">
-                  <a href="#" class="btn btn-primary bg-danger mt-4 mb-4">Adományozok <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                <div class="btn-group btn-group-toggle btn-group--switch col-md-12 " data-toggle="buttons">
+                  <label class="btn btn-secondary col-md-6 active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> EGYSZERI ÁTUTALÁS
+                  </label>
+                  <label class="btn btn-secondary col-md-6">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> RENDSZERES ÁTUTALÁS
+                  </label>
                 </div>
-                <div class="col-12">
-                  <strong>Útmutató</strong>
-                  <ul class="nav">
-                    <li><a href="#">Cégeknek a támogatás adóalaból való leírásához</a></li>
-                  </ul>
+                <div class="btn-group btn-group-toggle btn-group--switch col-md-12 " data-toggle="buttons">
+                  <label class="btn btn-secondary col-md-6 active">
+                    <input type="radio" name="options" id="option3" autocomplete="off" checked> MEGADOM AZ ADATAIMAT
+                  </label>
+                  <label class="btn btn-secondary col-md-6">
+                    <input type="radio" name="options" id="option4" autocomplete="off"> ANONIM MARADOK
+                  </label>
                 </div>
               </div><!--row-->
+                <p>Adomány</p>
+                <div class="btn-group-toggle row no-gutters" data-toggle="buttons">
+                  <label class="btn btn-donation btn-smaller col-md-6">
+                    <input type="radio" name="options" id="option5" autocomplete="off" checked> 2 000 Ft
+                  </label>
+                  <label class="btn btn-donation btn-smaller col-md-6">
+                    <input type="radio" name="options" id="option6" autocomplete="off"> 5 000 Ft
+                  </label>
+                  <label class="btn btn-donation btn-bigger col-md-6">
+                    <input type="radio" name="options" id="option7" autocomplete="off"> 10 000 Ft
+                  </label>
+                  <label class="btn btn-donation btn-bigger col-md-6">
+                    <input type="radio" name="options" id="option8" autocomplete="off"> 20 000 Ft
+                  </label><!--btn-group-toggle-->
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline1">EURO</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline2">HUF</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline3">USD</label>
+                </div><!--btn-group-toggle-->
+                <form class="needs-validation form--main" novalidate>
+                  <p>Személyes adatok</p>
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom01">Vezetéknév</label>
+                      <input type="text" class="form-control form-control-lg" id="validationCustom01"  required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom02">Utónév</label>
+                      <input type="text" class="form-control form-control-lg" id="validationCustom02"  required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom05">Irányítószám</label>
+                      <input type="text" class="form-control form-control-lg" id="validationCustom05"  required>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom03">Város</label>
+                      <input type="text" class="form-control form-control-lg" id="validationCustom03"  required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom06">Cím</label>
+                      <input type="text" class="form-control form-control-lg" id="validationCustom06"  required>
+                      <div class="invalid-feedback">
+                        Please provide a valid address.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom07">Email</label>
+                      <input type="email" class="form-control form-control-lg" id="validationCustom07"  required>
+                      <div class="invalid-feedback">
+                        Please provide a valid email address.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">nem</label>
+                        <select class="form-control form-control-lg" id="exampleFormControlSelect1" required>
+                          <option>válasszon</option>
+                          <option>nő</option>
+                          <option>férfi</option>
+                        </select>
+                      </div>
+                      <div class="invalid-feedback">
+                        Please provide your gender.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom015">Születési év</label>
+                      <input type="text" class="form-control form-control-lg" id="validationCustom015" >
+                    </div>
+                    <div class="col mb-3">
+                      <div class="form-group">
+                         <label for="exampleFormControlTextarea1">Megjegyzés</label>
+                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Elfogadom a szerződési feltételeket
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-primary bg-danger mt-4">Adományozok <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                </form>
             </div><!--adomanyozas-->
           	<div class="tab-pane fade" id="kozvetlenutalas" role="tabpanel">
               <h2>közvetlen utalás</h2>
@@ -320,26 +393,65 @@ A rendelkezés módja a NAV által elfogadott <strong>17SZJA-EGYSZA</strong> nyo
                 </div><!-- accordion-->
           	</div><!-- onkentesseg-->
           </div>
+          <section class="section--carousel">
+            <h1 class="text-center mt-5">Más támogatási lehetőégek</h1>
+            <div id="owl_about_main_slider-3" class="owl-carousel owl-dis no-gutters">
+              <div class="col col-sm-12 col-xl-4">
+                <div class="card card-group--no-pix">
+                  <div class="card-body">
+                    <h5 class="card-title">1 % felajánlása</h5>
+                    <p class="card-text">Az idén is lehetőségetek van arra, hogy amikor befizetett személyi jövedelemadótok 1%-áról rendelkeztek, támogassátok a Világszép Alapítványt</p>
+                    <a href="#" class="btn btn-primary">TOVÁBB <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-sm-12 col-xl-4">
+                <div class="card card-group--no-pix">
+                  <div class="card-body">
+                    <h5 class="card-title">önkéntesség</h5>
+                    <p class="card-text">Az idén is lehetőségetek van arra, hogy amikor befizetett személyi jövedelemadótok 1%-áról rendelkeztek, támogassátok a Világszép Alapítványt</p>
+                    <a href="#" class="btn btn-primary">TOVÁBB <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-sm-12 col-xl-4">
+                <div class="card card-group--no-pix">
+                  <div class="card-body">
+                    <h5 class="card-title">bérelj ki minket</h5>
+                    <p class="card-text">A Világszép Alapítvány paloznaki Meseközpontja és a budai hegyekben lévő Létra Klubja egyaránt alkalmas céges rendezvények, csapatépítések, képzések megtartására.</p>
+                    <a href="#" class="btn btn-primary">TOVÁBB <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- <div class="card-group card-group--small-line">
+            <div class="card card-group--no-pix">
+              <div class="card-body">
+                <h5 class="card-title">1 % felajánlása  </h5>
+                <p class="card-text">Az idén is lehetőségetek van arra, hogy amikor befizetett személyi jövedelemadótok 1%-áról rendelkeztek, támogassátok a Világszép Alapítványt</p>
+                <a href="#" class="btn btn-primary">TOVÁBB <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="card card-group--no-pix">
+              <div class="card-body">
+                <h5 class="card-title">önkéntesség</h5>
+                <p class="card-text">Az idén is lehetőségetek van arra, hogy amikor befizetett személyi jövedelemadótok 1%-áról rendelkeztek, támogassátok a Világszép Alapítványt</p>
+                <a href="#" class="btn btn-primary">TOVÁBB <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="card card-group--no-pix">
+              <div class="card-body">
+                <h5 class="card-title">bérelj ki minket</h5>
+                <p class="card-text">A Világszép Alapítvány paloznaki Meseközpontja és a budai hegyekben lévő Létra Klubja egyaránt alkalmas céges rendezvények, csapatépítések, képzések megtartására.</p>
+                <a href="#" class="btn btn-primary">TOVÁBB <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
-    <section class="section-padding bg-light-blue section--carousel">
-      <h1 class="text-center">Támogatóink</h1>
-      <div class="row">
-        <div id="owl_about_main_slider-2" class="owl-carousel owl-dis no-gutters justify-content-center">
-          <div class="col col-sm-3">
-            <div class="item">
-              <a href="#"><img class="img-fluid" src="images/partnereink/vilagszepe-partners-01@2x.jpg"  alt="elmenyakademia"></a>
-            </div><!-- partnereink item -->
-          </div><!-- partnereink grid -->
-          <div class="col col-sm-3">
-            <div class="item">
-              <a href="#"><img class="img-fluid" src="images/partnereink/vilagszepe-partners-02@2x.jpg"  alt="mesemuzeum"></a>
-            </div><!-- partnereink item -->
-          </div><!-- partnereink grid -->
-        </div><!-- partnereink carousel -->
-      </div>
-    </section><!-- partnereink -->
   </div>
 </div>
 </main>

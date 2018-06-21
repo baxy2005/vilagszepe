@@ -3,7 +3,7 @@ var brandFull = $('.header__brand').html();
 
 $(document).ready(function() {
 
-  $(".section--carousel .item").hover(function(e) {
+  $(".section--carousel .card").hover(function(e) {
       e.preventDefault();
       $(this).parents('.col').siblings().toggleClass('opacity');
   });

@@ -3,7 +3,7 @@
 	padding-bottom: 0;
 }
 
-.card--horizontal, .card--main, .card--coworkeres, .card.card--accordion, .card--small, .card--color-bg {
+.card--horizontal, .card--main, .card--coworkeres, .card.card--accordion, .card--small, .card--color-bg, .card-group--no-pix {
 	border: none;
 	border-radius: 0;
 }
@@ -328,5 +328,35 @@ monay cards
 		 }
 	 }
 	 margin-bottom: .25rem;
+ }
+}
+/*-------------------------------------------
+other support cards
+-------------------------------------------*/
+.card-group--small-line {
+	margin-right: -4px;
+	margin-left: -4px;
+}
+.card-group--no-pix {
+	height: auto;
+	margin-bottom: 1rem;
+	@include media-breakpoint-up(xl) {
+		height: 100%;
+	};
+
+	// margin-right: 2px;
+	// margin-left: 2px;
+ .card-body {
+	 padding: 2rem;
+	 @include flexContainer (row, flex-start, flex-start);
+	 flex-wrap: wrap;
+	 .btn-primary {
+		 min-width: 90%;
+		 align-self: flex-end;
+	 }
+	 .card-title {
+		 font-size: 1.5rem;
+		 text-transform: uppercase;
+	 }
  }
 }

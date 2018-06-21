@@ -43,3 +43,47 @@
 	height: 2.5rem;
 	@include flexContainer (row, center, center);
 }
+
+.btn-donation {
+	background-color: white;
+	border-color: $color-light-gray;
+	font-size: 2.5rem;
+	color: $color-tertiary;
+	font-weight: 300;
+	border-width: 2px;
+}
+
+.btn-smaller.active,  .btn-bigger.active{
+	color: white;
+	box-shadow: none;
+}
+
+.btn-smaller.active {
+	background-color: $color-secondary;
+	border-color: $color-secondary;
+}
+.btn-bigger.active {
+	background-color: $color-primary;
+	border-color: $color-primary;
+}
+/*-------------------------------------------
+radio buttons
+-------------------------------------------*/
+.btn-group--switch {
+	margin-bottom: 1.5rem;
+	.btn-secondary {
+		background-color: $color-light-gray;
+		box-shadow: none;
+		border-color: $color-light-gray;
+		padding: .8rem .75rem;
+		color: gray;
+		border-width: 2px;
+	}
+
+	.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show>.btn-secondary.dropdown-toggle {
+		color: $dark-color-gray;
+    background-color: white;
+    border-color: $color-light-gray;
+		font-weight: 700;
+	}
+}

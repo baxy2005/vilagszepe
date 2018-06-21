@@ -47,6 +47,14 @@
 		margin-bottom: 5.5rem;
 	};
 }
+	#owl_about_main_slider-3 {
+		.col {
+			transition: opacity .4s ease;
+		}
+		.item {
+			height: 100%;
+		}
+	}
 /*-------------------------------------------
 all device caroucel (gallery)
 -------------------------------------------*/
