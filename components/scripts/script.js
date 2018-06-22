@@ -31,6 +31,84 @@ var ourScene = new ScrollMagic.Scene({
 }) // this requires a plugin
 .addTo(controller);
 
+// parallax scene
+
+
+var parallaxTl = new TimelineMax();
+parallaxTl
+  .from('.card-image--one', 1, {y: '-8%', ease:Power0.easeNone}, 0)
+  ;
+
+var slideParallaxScene = new ScrollMagic.Scene({
+  // triggerElement: '.card-body small',
+  triggerHook: 0,
+  offset: 10
+})
+.setTween(parallaxTl)
+.addIndicators({
+  name: 'paralax',
+  colorTrigger: 'red',
+  colorStart: 'blue',
+  colorEnd: 'pink'
+})
+.addTo(controller);
+
+var parallaxTl = new TimelineMax();
+parallaxTl
+  .from('.card-image--two', 1, {y: '-8%', ease:Power0.easeNone}, 0)
+  ;
+
+var slideParallaxScene = new ScrollMagic.Scene({
+  triggerElement: '.card-image--two',
+  triggerHook: 0,
+  offset: 10
+})
+.setTween(parallaxTl)
+.addIndicators({
+  name: 'paralax',
+  colorTrigger: 'red',
+  colorStart: 'blue',
+  colorEnd: 'pink'
+})
+.addTo(controller);
+
+var parallaxTl = new TimelineMax();
+parallaxTl
+  .from('.card-image--three', 1, {y: '-8%', ease:Power0.easeNone}, 0)
+  ;
+
+var slideParallaxScene = new ScrollMagic.Scene({
+  triggerElement: '.card-image--three',
+  triggerHook: 0,
+  offset: 10
+})
+.setTween(parallaxTl)
+.addIndicators({
+  name: 'paralax',
+  colorTrigger: 'red',
+  colorStart: 'blue',
+  colorEnd: 'pink'
+})
+.addTo(controller);
+
+var parallaxTl = new TimelineMax();
+parallaxTl
+  .from('.card-image--four', 1, {y: '-8%', ease:Power0.easeNone}, 0)
+  ;
+
+var slideParallaxScene = new ScrollMagic.Scene({
+  triggerElement: '.card-image--four',
+  triggerHook: 0,
+  offset: 10
+})
+.setTween(parallaxTl)
+.addIndicators({
+  name: 'paralax',
+  colorTrigger: 'red',
+  colorStart: 'blue',
+  colorEnd: 'pink'
+})
+.addTo(controller);
 
 $(".owl-all-device").owlCarousel({
    navigation : true, // Show next and prev buttons

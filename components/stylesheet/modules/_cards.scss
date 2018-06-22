@@ -227,6 +227,7 @@ accordion card
 	flex-direction: column;
 	flex: 1 0 100%;
 	min-height: 576px;
+	overflow: hidden;
 
 		@include media-breakpoint-up (sm) {
 			flex-direction: row;
@@ -239,7 +240,7 @@ accordion card
 		background-position: center;
 		// width: 576px;
 		@include media-breakpoint-up (sm) {
-			height: auto;
+			height: 110%;
 		};
 	}
 	.card-image--four {
