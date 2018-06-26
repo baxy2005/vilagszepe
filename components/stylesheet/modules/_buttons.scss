@@ -4,8 +4,11 @@
 .btn-primary {
 	padding: .6rem 1rem;
 	font-size: 1.125rem;
-	box-shadow: $box-shadow-lg;
+	box-shadow: $box-shadow;
 	min-width: 16rem;
+	@include media-breakpoint-up (sm){
+	box-shadow: $box-shadow-lg;
+	};
 }
 .btn-secondary {
 	box-shadow: $box-shadow;

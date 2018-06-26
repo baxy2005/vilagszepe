@@ -1,4 +1,6 @@
 var brandFull = $('.header__brand').html();
+var language = $('.header__lang');
+// var supportButton = $('.bg-danger');
 // var brandLogo = $('.navmenu i img')
 
 $(document).ready(function() {
@@ -8,6 +10,8 @@ $(document).ready(function() {
       $(this).parents('.col').siblings().toggleClass('opacity');
   });
   $('.nav-tabs').responsiveTabs();
+
+
 
 /*-------------------------------------------
   ScrollMagic
@@ -24,12 +28,31 @@ var ourScene = new ScrollMagic.Scene({
 })
 .setClassToggle('.header', 'header-small') // add class to project01
 .addIndicators({
-  name: 'fade scene',
-  colorTrigger: 'black',
-  colorStart: '#75C695',
-  colorEnd: 'pink'
+  // name: 'fade scene',
+  // colorTrigger: 'black',
+  // colorStart: '#75C695',
+  // colorEnd: 'pink'
 }) // this requires a plugin
 .addTo(controller);
+
+// var foooter = new TimelineMax();
+// foooter
+//   .to('.navmenu', .5, {top: '-288', ease:Power4.easeNone}, .5)
+//   ;
+// // footer scene
+// var footer = new ScrollMagic.Scene({
+// 	triggerElement: 'footer',
+// 	triggerHook: 1,
+//   offset: -70
+// })
+// .setTween(foooter) // add class to project01
+// .addIndicators({
+// 	name: 'footer scene',
+// 	colorTriger: 'blue',
+// 	indent: 200,
+// 	colorStart: 'gray',
+// })
+// .addTo(controller);
 
 // parallax scene
 
@@ -46,10 +69,10 @@ var slideParallaxScene = new ScrollMagic.Scene({
 })
 .setTween(parallaxTl)
 .addIndicators({
-  name: 'paralax',
-  colorTrigger: 'red',
-  colorStart: 'blue',
-  colorEnd: 'pink'
+  // name: 'paralax',
+  // colorTrigger: 'red',
+  // colorStart: 'blue',
+  // colorEnd: 'pink'
 })
 .addTo(controller);
 
@@ -65,10 +88,10 @@ var slideParallaxScene = new ScrollMagic.Scene({
 })
 .setTween(parallaxTl)
 .addIndicators({
-  name: 'paralax',
-  colorTrigger: 'red',
-  colorStart: 'blue',
-  colorEnd: 'pink'
+  // name: 'paralax',
+  // colorTrigger: 'red',
+  // colorStart: 'blue',
+  // colorEnd: 'pink'
 })
 .addTo(controller);
 
@@ -84,10 +107,10 @@ var slideParallaxScene = new ScrollMagic.Scene({
 })
 .setTween(parallaxTl)
 .addIndicators({
-  name: 'paralax',
-  colorTrigger: 'red',
-  colorStart: 'blue',
-  colorEnd: 'pink'
+  // name: 'paralax',
+  // colorTrigger: 'red',
+  // colorStart: 'blue',
+  // colorEnd: 'pink'
 })
 .addTo(controller);
 
@@ -103,10 +126,10 @@ var slideParallaxScene = new ScrollMagic.Scene({
 })
 .setTween(parallaxTl)
 .addIndicators({
-  name: 'paralax',
-  colorTrigger: 'red',
-  colorStart: 'blue',
-  colorEnd: 'pink'
+  // name: 'paralax',
+  // colorTrigger: 'red',
+  // colorStart: 'blue',
+  // colorEnd: 'pink'
 })
 .addTo(controller);
 
@@ -124,13 +147,16 @@ $(".owl-all-device").owlCarousel({
 });
 
 
+
  // fakewaffle.responsiveTabs(['xs', 'sm']);
 
 
 if ( $(window).width() < 992 ) {
   // $(brandLogo).clone().appendTo('.navbar')
   $(brandFull).clone().appendTo('.navbar');
+  $(language).clone().prependTo('.navbar-nav');
   $('.navbar .navmenu-brand small').remove()
+  // $(supportButton).clone().appendTo('.navbar-nav');
 
 //  $('.navbar').append(brandLogo);
 //  $('.navbar').append(brand);
@@ -164,15 +190,19 @@ $(window).resize(function() {
       $('.overlay').hide(0, false);
       $('body').removeClass('bs.offcanvas');
       $('.navbar .navmenu-brand').remove()
+      $('.navbar-nav .header__lang').remove()
     }
     if ($(window).width() < 992) {
       var brandcheck = $(".navbar .navmenu-brand")
+      var langcheck = $(".navbar-nav .header__lang")
       if (brandcheck.length == 0){
         console.log('brandcheck.length')
         $(brandFull).clone().appendTo('.navbar')
         $('.navbar .navmenu-brand small').remove()
       }
-
+      if (langcheck.length == 0){
+        $(language).clone().prependTo('.navbar-nav')
+      }
     }
 });
 

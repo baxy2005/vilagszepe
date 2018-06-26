@@ -1,6 +1,10 @@
 .table-wraper {
 	background-color: $color-light-gray;
-	padding: 1.5rem;
+	padding: 1rem;
+	height: 100%;
+	@include media-breakpoint-up (md) {
+		padding: 1.5rem;
+	};
 }
 .section--table{
 	@include noGutter (-1px, 1px);
@@ -12,24 +16,33 @@
 	}
 	small {
 		color: $color-tertiary;
-		float: right;
-		line-height: 2.3;
+		float: left;
+		line-height: 1;
 		font-size: .9rem;
+		display: block;
+		width: 100%;
+
 	}
 	.table {
 		background-color: $color-light-gray;
 		margin-bottom: 0px;
 		color: $color-primary;
-		font-size: 1.375rem;
+		font-size: 1.1rem;
 		font-weight: 300;
+		@include media-breakpoint-up (md) {
+			font-size: 1.375rem;
+		};
 		thead th {
 			border-bottom: (2 * $table-border-width) solid white;
 			text-align: center;
 			vertical-align: middle;
 			border-top: none;
 			font-weight: 300;
-			padding: 0 0 1.2rem 0;
+			padding: 0 0 .6rem 0;
 			line-height: 1.3;
+			@include media-breakpoint-up (md) {
+				padding: 0 0 1.2rem 0;
+			};
 		}
 		tbody {
 			tr {
