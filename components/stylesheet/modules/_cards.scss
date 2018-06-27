@@ -3,7 +3,7 @@
 	padding-bottom: 0;
 }
 
-.card--horizontal, .card--main, .card--coworkeres, .card.card--accordion, .card--small, .card--color-bg, .card-group--no-pix {
+.card--horizontal, .card--main, .card--coworkeres, .card.card--accordion, .card--small, .card--color-bg, .card-group--no-pix, .card--logos {
 	border: none;
 	border-radius: 0;
 	background-color: transparent;
@@ -16,6 +16,10 @@ coworkers
 .card--coworkeres {
 	background-color: white;
 	height: 100%;
+	margin-top: 4.5rem;
+	@include media-breakpoint-up(sm){
+		margin-top: 0;
+	};
 //	margin-bottom: 4rem;
 	img {
 	// @include absoluteCenter (absolute, -3.8rem, 0,0,0);
@@ -86,6 +90,15 @@ main card
 	}
 	.card-img-top {
 		border-radius: 0;
+	}
+	&:last-child {
+		margin-bottom: 0
+	}
+	.card-text {
+		padding: 0;
+		@include media-breakpoint-up(xl) {
+			padding: 0 3.75rem;
+		};
 	}
 }
 
@@ -176,14 +189,17 @@ contact card
 		 flex: 0 0 28.999rem;
 	 };
 	 .card-body {
-		 padding: 2rem;
+		 padding: 1rem;
+		 @include media-breakpoint-up (md) {
+			 padding: 2rem;
+		 } ;
 		@include media-breakpoint-up (xl) {
 			padding: 2rem 5rem;
 		} ;
 	 }
 	 .btn-primary {
 		 padding: .6rem 0;
-		 width: 100%;
+		 min-width: 100%;
 	 }
 }
 

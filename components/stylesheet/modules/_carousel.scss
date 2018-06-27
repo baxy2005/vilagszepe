@@ -1,8 +1,12 @@
 .section--carousel {
 	.owl-carousel .owl-stage-outer {
 		// overflow: visible;
-		margin-left: 15px
+		margin-left: 15px;
+		margin-right:  -15px
 
+	}
+	.owl-dots {
+		display: none
 	}
 	.owl-item {
 		.col {
@@ -10,9 +14,16 @@
 			padding-right: 1px;
 		}
 	}
+	.row.no-gutters {
+		margin-left: -16px;
+		margin-right: 0;
+		@include media-breakpoint-up(sm) {
+			margin-left: 0;
+		};
+	}
 	@include noGutter (-1px, 1px);
 	h1 {
-		margin-bottom:0rem;
+		margin-bottom: .75rem;
 		@include media-breakpoint-up (sm) {
 			margin-bottom: 3.355rem;
 		};
@@ -28,11 +39,17 @@
 			margin-top: 0;
 		};
 	}
-	#owl_about_main_slider-2 .item{
+	#owl_about_main_slider-2 .card-body{
 		background-color: white;
 		margin-bottom: 2px;
 		@include flexContainer(row, center, center);
-		padding: 3.5rem;
+		padding: 1.5rem;
+		@include media-breakpoint-up(sm) {
+			padding: 2.5rem ;
+		};
+		@include media-breakpoint-up(xl) {
+			padding: 3.5rem ;
+		};
 		a{
 			filter: grayscale(100%);
 			@include hover-focus {
