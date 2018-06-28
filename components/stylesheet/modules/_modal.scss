@@ -43,6 +43,15 @@ gallery modal
 		border-radius: 0;
 		.modal-body {
 			padding: 0;
+			.owl-nav {
+				display: none;
+				@include media-breakpoint-up (sm) {
+					display: flex;
+				};
+			}
+			.owl-dots {
+					display: none;
+			}
 		}
 		.modal-footer {
 			border-top: none;
@@ -52,6 +61,9 @@ gallery modal
 		.modal-title {
 			font-size: 1rem;
 			margin-left: 1rem;
+		}
+		.modal-title, .modal-numbers {
+			line-height: 1.15;
 		}
 		.modal-numbers {
 			@include flexContainer (row, center, center);

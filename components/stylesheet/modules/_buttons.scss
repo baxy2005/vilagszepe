@@ -1,13 +1,15 @@
 .btn {
 	text-transform: uppercase;
+	white-space: normal;
 }
 .btn-primary {
 	padding: .6rem 1rem;
 	font-size: 1.125rem;
 	box-shadow: $box-shadow;
-	min-width: 16rem;
+	min-width: 100%;
 	@include media-breakpoint-up (sm){
 	box-shadow: $box-shadow-lg;
+	min-width: 16rem;
 	};
 }
 .btn-secondary {

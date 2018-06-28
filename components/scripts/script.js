@@ -136,10 +136,19 @@ var slideParallaxScene = new ScrollMagic.Scene({
 $(".owl-all-device").owlCarousel({
    navigation : true, // Show next and prev buttons
    slideSpeed : 500,
-   margin:0,
+   margin:1,
    paginationSpeed : 400,
    autoplay:false,
    items : 1,
+   responsive:{
+    0:{
+        items:1.1
+    },
+    576:{
+        items:1,
+        margin:0
+    }
+},
    loop:true,
    nav:true,
    lazyLoad:true,
