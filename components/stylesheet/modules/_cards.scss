@@ -365,6 +365,7 @@ other support cards
 .card-group--no-pix {
 	height: auto;
 	margin-bottom: 1rem;
+	background-color: white;
 	@include media-breakpoint-up(xl) {
 		height: 100%;
 	};
@@ -372,16 +373,31 @@ other support cards
 	// margin-right: 2px;
 	// margin-left: 2px;
  .card-body {
-	 padding: 2rem;
+	 padding: 1rem;
 	 @include flexContainer (row, flex-start, flex-start);
 	 flex-wrap: wrap;
+	 @include media-breakpoint-up (sm) {
+		padding: 2rem;
+	 };
 	 .btn-primary {
 		 min-width: 90%;
 		 align-self: flex-end;
 	 }
 	 .card-title {
-		 font-size: 1.5rem;
 		 text-transform: uppercase;
+		 font-size: 1.2rem;
+		 @include media-breakpoint-up (sm) {
+			font-size: 1.5rem;
+		 };
+	 }
+	 .card-text {
+		 line-height: 1.4;
+		 font-size: .8rem;
+		 margin-bottom: 1rem;
+		 @include media-breakpoint-up (sm) {
+			line-height: 1.5;
+			font-size: 1rem;
+		 };
 	 }
  }
 }

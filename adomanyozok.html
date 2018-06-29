@@ -100,6 +100,7 @@
             </li>
             <a class="nav-item nav-link" href="#">Galéria</a>
             <a class="nav-item nav-link" href="#">Kapcsolat</a>
+            <a href="#" class="btn btn-primary bg-danger">Adományozok <i class="fa fa-heart-o" aria-hidden="true"></i> </a>
           </div>
           <ul class="nav justify-content-flex-start nav--social">
             <li class="nav-item">
@@ -123,8 +124,7 @@
     </div>
     <div class="grid-right">
     <section class="section-padding">
-      <div class="row">
-        <div class="col p-5 bg-mid-gray">
+        <div class="col p-3 p-sm-4 p-md-5 bg-mid-gray">
           <h1 class="text-center">Adományozok</h1>
           <ul class="nav nav-tabs nav-tabs--main responsive" role="tablist">
           	<li class="nav-item">
@@ -154,7 +154,7 @@
                   </label>
                 </div>
               </div><!--row-->
-                <p>Adomány</p>
+                <p class="text-muted mb-3">Adomány</p>
                 <div class="btn-group-toggle row no-gutters" data-toggle="buttons">
                   <label class="btn btn-donation btn-smaller col-md-6">
                     <input type="radio" name="options" id="option5" autocomplete="off" checked> 2 000 Ft
@@ -182,7 +182,7 @@
                   <label class="custom-control-label" for="customRadioInline3">USD</label>
                 </div><!--btn-group-toggle-->
                 <form class="needs-validation form--main" novalidate>
-                  <p>Személyes adatok</p>
+                  <p class="text-muted mb-3">Személyes adatok</p>
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
                       <label for="validationCustom01">Vezetéknév</label>
@@ -261,7 +261,7 @@
                       </div>
                     </div>
                   </div>
-                  <a href="#" class="btn btn-primary bg-danger mt-4">Adományozok <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                <a href="#"><button class="btn btn-primary bg-danger mt-4" type="submit">Adományozok <i class="fa fa-heart-o" aria-hidden="true"></i></button></a>
                 </form>
             </div><!--adomanyozas-->
           	<div class="tab-pane fade" id="kozvetlenutalas" role="tabpanel">
@@ -450,7 +450,6 @@ A rendelkezés módja a NAV által elfogadott <strong>17SZJA-EGYSZA</strong> nyo
             </div>
           </div> -->
         </div>
-      </div>
     </section>
   </div>
 </div>
@@ -599,3 +598,25 @@ A rendelkezés módja a NAV által elfogadott <strong>17SZJA-EGYSZA</strong> nyo
   </div><!--modal -->
   </body>
 </html>
+
+
+<!-- <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script> -->

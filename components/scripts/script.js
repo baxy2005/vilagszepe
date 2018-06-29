@@ -186,6 +186,23 @@ if ( $(window).width() < 992 ) {
   		$('.overlay').fadeOut();
     }
   });
+
+  /*-------------------------------------------
+  form validation
+  -------------------------------------------*/
+
+  var forms = document.getElementsByClassName('needs-validation');
+  // Loop over them and prevent submission
+  var validation = Array.prototype.filter.call(forms, function(form) {
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+
 });
 $(window).resize(function() {
     if ( $(window).width() < 576 ) {

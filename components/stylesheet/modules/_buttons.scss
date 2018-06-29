@@ -83,6 +83,10 @@ radio buttons
 		padding: .8rem .75rem;
 		color: gray;
 		border-width: 2px;
+		font-size: .7rem;
+		@include media-breakpoint-up (sm) {
+		font-size: 1rem;
+		};
 	}
 
 	.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show>.btn-secondary.dropdown-toggle {
@@ -90,5 +94,9 @@ radio buttons
     background-color: white;
     border-color: $color-light-gray;
 		font-weight: 700;
+		font-size: .7rem;
+		@include media-breakpoint-up (sm) {
+		font-size: 1rem;
+		};
 	}
 }
