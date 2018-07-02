@@ -1,5 +1,15 @@
+.modal {
+	left: 0;
+	@include media-breakpoint-up (lg) {
+		left: 288px;
+	};
+}
+.modal-dialog {
+	max-width: 100%;
+	margin: 0.5rem;
+}
+
 .modal-dialog--main {
-	max-width: 70%;
 	.modal-content{
 		border-radius: 0;
 		border: none;
@@ -28,6 +38,10 @@
 		right:0;
 		top:0;
 	}
+	.img-fluid {
+		    width: 100%;
+				max-width: none;
+	}
 }
 /*-------------------------------------------
 gallery modal
@@ -35,10 +49,10 @@ gallery modal
 
 
 .modal-dialog--gallery {
-	max-width: 95%;
-	@include media-breakpoint-up (sm) {
-		max-width: 70%;
-	};
+	// max-width: 95%;
+	// @include media-breakpoint-up (sm) {
+	// 	max-width: 70%;
+	// };
 	.modal-content{
 		border-radius: 0;
 		.modal-body {

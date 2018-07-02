@@ -27,12 +27,12 @@ var ourScene = new ScrollMagic.Scene({
   offset: 10
 })
 .setClassToggle('.header', 'header-small') // add class to project01
-.addIndicators({
-  // name: 'fade scene',
-  // colorTrigger: 'black',
-  // colorStart: '#75C695',
-  // colorEnd: 'pink'
-}) // this requires a plugin
+// .addIndicators({
+//   // name: 'fade scene',
+//   // colorTrigger: 'black',
+//   // colorStart: '#75C695',
+//   // colorEnd: 'pink'
+// }) // this requires a plugin
 .addTo(controller);
 
 // var foooter = new TimelineMax();
@@ -68,12 +68,12 @@ var slideParallaxScene = new ScrollMagic.Scene({
   offset: 10
 })
 .setTween(parallaxTl)
-.addIndicators({
-  // name: 'paralax',
-  // colorTrigger: 'red',
-  // colorStart: 'blue',
-  // colorEnd: 'pink'
-})
+// .addIndicators({
+//   // name: 'paralax',
+//   // colorTrigger: 'red',
+//   // colorStart: 'blue',
+//   // colorEnd: 'pink'
+// })
 .addTo(controller);
 
 var parallaxTl = new TimelineMax();
@@ -87,12 +87,12 @@ var slideParallaxScene = new ScrollMagic.Scene({
   offset: 10
 })
 .setTween(parallaxTl)
-.addIndicators({
-  // name: 'paralax',
-  // colorTrigger: 'red',
-  // colorStart: 'blue',
-  // colorEnd: 'pink'
-})
+// .addIndicators({
+//   // name: 'paralax',
+//   // colorTrigger: 'red',
+//   // colorStart: 'blue',
+//   // colorEnd: 'pink'
+// })
 .addTo(controller);
 
 var parallaxTl = new TimelineMax();
@@ -106,12 +106,12 @@ var slideParallaxScene = new ScrollMagic.Scene({
   offset: 10
 })
 .setTween(parallaxTl)
-.addIndicators({
-  // name: 'paralax',
-  // colorTrigger: 'red',
-  // colorStart: 'blue',
-  // colorEnd: 'pink'
-})
+// .addIndicators({
+//   // name: 'paralax',
+//   // colorTrigger: 'red',
+//   // colorStart: 'blue',
+//   // colorEnd: 'pink'
+// })
 .addTo(controller);
 
 var parallaxTl = new TimelineMax();
@@ -125,12 +125,12 @@ var slideParallaxScene = new ScrollMagic.Scene({
   offset: 10
 })
 .setTween(parallaxTl)
-.addIndicators({
-  // name: 'paralax',
-  // colorTrigger: 'red',
-  // colorStart: 'blue',
-  // colorEnd: 'pink'
-})
+// .addIndicators({
+//   // name: 'paralax',
+//   // colorTrigger: 'red',
+//   // colorStart: 'blue',
+//   // colorEnd: 'pink'
+// })
 .addTo(controller);
 
 $(".owl-all-device").owlCarousel({

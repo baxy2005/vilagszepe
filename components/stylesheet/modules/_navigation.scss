@@ -19,7 +19,7 @@ width: 18rem !important;
   z-index: 1029;
 }
 .navbar-offcanvas, .navmenu-fixed-left, .navmenu-fixed-right {
-  top: 48px;
+  top: 46px;
   @include media-breakpoint-up(lg) {
     top: 0;
   };
@@ -27,6 +27,7 @@ width: 18rem !important;
 .navbar-toggler {
   padding: 0;
 }
+
 /*-------------------------------------------
 side main navigation
 -------------------------------------------*/
@@ -68,8 +69,18 @@ side main navigation
     @include flexContainer (row, center, space-between)
     &:after {
       color: $color-gray-30;
+      display: none;
+    }
+    .fa {
+      transition: all .5s ease;
     }
   }
+  .dropdown.show {
+   .fa {
+     transform:  rotate(180deg);
+   }
+ }
+
   .dropdown-item {
     padding: .50rem 1.5rem;
   }
@@ -115,4 +126,58 @@ top navigation bar
 
 .navmenu-out {
   position: relative;
+}
+
+/*-------------------------------------------
+animated hamburger
+-------------------------------------------*/
+
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: #fff;
+  transform: rotate(0deg) translate(0px, 0px);
+  transition: ease all .2s;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  &:nth-child(2) {
+    width: 16px;
+    transition: ease all .2s;
+  }
+}
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar-toggler {
+  &:hover>.icon-bar:nth-child(2), &:active>.icon-bar:nth-child(2)  {
+    width: 22px;
+    transition: ease all .2s;
+  }
+}
+
+
+.navmenu.in + .navbar-default .navbar-toggler .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 4px);
+  transition: ease all .2s;
+}
+
+.navmenu.in + .navbar-default .navbar-toggler .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 4px);
+  transition: ease all .2s;
+}
+
+.navmenu.in + .navbar-default .navbar-toggler .icon-bar:nth-child(2) {
+  opacity: 0;
+  transition: ease all .2s;
+}
+
+.navmenu.in + .navbar-default .navbar-toggler  .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+  transition: ease all .2s;
 }
