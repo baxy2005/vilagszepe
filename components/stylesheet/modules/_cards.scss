@@ -249,7 +249,8 @@ accordion card
 	min-height: auto;
 	overflow: hidden;
 	@include media-breakpoint-up (md) {
-		min-height: 576px;
+		// min-height: 576px;
+		height: 576px;
 	};
 		@include media-breakpoint-up (sm) {
 			flex-direction: row;
