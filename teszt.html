@@ -123,73 +123,26 @@
       </header>
     </div>
     <div class="grid-right">
-      <section class="gallery">
-        <div class="row no-gutters">
-          <div class="col-sm-6">
-            <div class="card card--gallery text-white">
-              <img class="card-img" src="images/gallery/vilagszep-gallery-01.png" alt="Card image">
-              <div class="card-img-overlay">
-                <i class="fa fa-picture-o" aria-hidden="true"></i>
-                <h1 class="card-title"><a href="#" data-toggle="modal" data-target="#modal-gallery">Nevelőszülős családok tábora</a> </h1>
-              </div><!-- card-img-overlay -->
-            </div><!-- Card -->
-          </div> <!-- card row -->
-          <div class="col-sm-6">
-            <div class="card card--gallery text-white">
-              <img class="card-img" src="images/gallery/vilagszep-gallery-02.png" alt="Card image">
-              <div class="card-img-overlay">
-                <i class="fa fa-picture-o" aria-hidden="true"></i>
-                <h1 class="card-title"><a href="#">Halmaji nevelőszülős családok tábora 1.</a> </h1>
-              </div><!-- card-img-overlay -->
-            </div><!-- Card -->
-          </div> <!-- card row -->
-          <div class="col-sm-6">
-            <div class="card card--gallery text-white">
-              <img class="card-img" src="images/gallery/vilagszep-gallery-03.png" alt="Card image">
-              <div class="card-img-overlay">
-                <i class="fa fa-picture-o" aria-hidden="true"></i>
-                <h1 class="card-title"><a href="#">Halmaji nevelőszülős családok tábora 2.</a> </h1>
-              </div><!-- card-img-overlay -->
-            </div><!-- Card -->
-          </div> <!-- card row -->
-          <div class="col-sm-6">
-            <div class="card card--gallery text-white">
-              <img class="card-img" src="images/gallery/vilagszep-gallery-04.png" alt="Card image">
-              <div class="card-img-overlay">
-                <i class="fa fa-picture-o" aria-hidden="true"></i>
-                <h1 class="card-title"><a href="#">Világszép tábor</a> </h1>
-              </div><!-- card-img-overlay -->
-            </div><!-- Card -->
-          </div> <!-- card row -->
-          <div class="col-sm-6">
-            <div class="card card--gallery text-white">
-              <img class="card-img" src="images/gallery/vilagszep-gallery-05.png" alt="Card image">
-              <div class="card-img-overlay">
-                <i class="fa fa-picture-o" aria-hidden="true"></i>
-                <h1 class="card-title"><a href="#">Meseóvoda tábor</a> </h1>
-              </div><!-- card-img-overlay -->
-            </div><!-- Card -->
-          </div> <!-- card row -->
-          <div class="col-sm-6">
-            <div class="card card--gallery text-white">
-              <img class="card-img" src="images/gallery/vilagszep-gallery-06.png" alt="Card image">
-              <div class="card-img-overlay">
-                <i class="fa fa-picture-o" aria-hidden="true"></i>
-                <h1 class="card-title"><a href="#">Meseiskola - kalandtábor</a> </h1>
-              </div><!-- card-img-overlay -->
-            </div><!-- Card -->
-          </div> <!-- card row -->
-          <div class="col-sm-6">
-            <div class="card card--gallery text-white">
-              <img class="card-img" src="images/gallery/vilagszep-gallery-07.png" alt="Card image">
-              <div class="card-img-overlay">
-                <i class="fa fa-picture-o" aria-hidden="true"></i>
-                <h1 class="card-title"><a href="#">Mesemúzeum tábor</a> </h1>
-              </div><!-- card-img-overlay -->
-            </div><!-- Card -->
-          </div> <!-- card row -->
-        </div><!-- gallery row -->
-      </section><!-- gallery section -->
+      <div class="owl-carousel owl-all-device owl-theme">
+        <div class="item-video">
+          <picture>
+              <source class="owl-lazy" media="(min-width: 650px)" data-srcset="images/gallery-carousel/vilagszep-gallery-01-large-prev.png">
+              <source class="owl-lazy" media="(min-width: 350px)" data-srcset="images/gallery-carousel/vilagszep-gallery-01-medium-prev.png">
+              <img class="owl-lazy" data-src="images/gallery-carousel/vilagszep-gallery-01-fallback-prev.png" alt="">
+          </picture>
+        </div>
+        <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
+        <!-- <div class="item">
+          <a class="owl-video" href="https://youtu.be/xCClgEdjVqk"></a>
+        </div> -->
+        <div class="item">
+          <picture>
+              <source class="owl-lazy" media="(min-width: 650px)" data-srcset="images/gallery-carousel/vilagszep-gallery-01-large-prev.png">
+              <source class="owl-lazy" media="(min-width: 350px)" data-srcset="images/gallery-carousel/vilagszep-gallery-01-medium-prev.png">
+              <img class="owl-lazy" data-src="images/gallery-carousel/vilagszep-gallery-01-fallback-prev.png" alt="">
+          </picture>
+        </div>
+      </div>
     </div>
 </div>
 </main>
@@ -242,42 +195,5 @@
   <!-- my js script -->
   <script src="js/script.js"></script>
   <!-- Modal -->
-<div class="modal fade" id="modal-gallery" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog--gallery" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="owl-carousel owl-all-device">
-          <div class="item">
-            <picture>
-                <source class="owl-lazy" media="(min-width: 650px)" data-srcset="images/gallery-carousel/vilagszep-gallery-01-large-prev.png">
-                <source cl
-                ass="owl-lazy" media="(min-width: 350px)" data-srcset="images/gallery-carousel/vilagszep-gallery-01-medium-prev.png">
-                <img class="owl-lazy" data-src="images/gallery-carousel/vilagszep-gallery-01-fallback-prev.png" alt="">
-            </picture>
-          </div>
-          <div class="item">
-            <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/xCClgEdjVqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-          </div>
-          <div class="item">
-            <picture>
-                <source class="owl-lazy" media="(min-width: 650px)" data-srcset="images/gallery-carousel/vilagszep-gallery-01-large-prev.png">
-                <source class="owl-lazy" media="(min-width: 350px)" data-srcset="images/gallery-carousel/vilagszep-gallery-01-medium-prev.png">
-                <img class="owl-lazy" data-src="images/gallery-carousel/vilagszep-gallery-01-fallback-prev.png" alt="">
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <h5 class="modal-title" id="exampleModalLabel">Nevelőszülős családok tábora</h5>
-        <div class="modal-numbers">
-          <p>image 1 of 59</p>
-          <button type="button" class="close close--dark-bg" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>  <!-- Modal -->
   </body>
 </html>

@@ -57,6 +57,7 @@ gallery modal
 		border-radius: 0;
 		.modal-body {
 			padding: 0;
+			background-color: black;
 			.owl-nav {
 				display: none;
 				@include media-breakpoint-up (sm) {

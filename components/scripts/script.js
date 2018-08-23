@@ -132,7 +132,7 @@ var slideParallaxScene = new ScrollMagic.Scene({
 //   // colorEnd: 'pink'
 // })
 .addTo(controller);
-
+//
 $(".owl-all-device").owlCarousel({
    navigation : true, // Show next and prev buttons
    slideSpeed : 500,
@@ -140,6 +140,8 @@ $(".owl-all-device").owlCarousel({
    paginationSpeed : 400,
    autoplay:false,
    items : 1,
+   video:true,
+   // responsive: true,
    responsive:{
     0:{
         items:1.1
