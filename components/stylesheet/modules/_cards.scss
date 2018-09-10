@@ -3,7 +3,7 @@
 	padding-bottom: 0;
 }
 
-.card--horizontal, .card--main, .card--coworkeres, .card.card--accordion, .card--small, .card--color-bg, .card-group--no-pix, .card--logos {
+.card--horizontal, .card--main, .card--coworkeres, .card.card--accordion, .card--small, .card--color-bg, .card-group--no-pix, .card--logos, .card--documents   {
 	border: none;
 	border-radius: 0;
 	background-color: transparent;
@@ -403,4 +403,51 @@ other support cards
 		 };
 	 }
  }
+}
+/*-------------------------------------------
+other documents
+-------------------------------------------*/
+.card--documents {
+	padding:  1rem 0;
+	.col-md-4 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.card-image {
+		i {
+			font-size: 2rem;
+		}
+		margin-bottom: .5rem;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		@include media-breakpoint-up (md) {
+		margin-bottom: 0rem;
+		justify-content: flex-start;
+		};
+	}
+	.card-body  {
+		padding:0;
+		display: flex;
+		align-items: center;
+		.card-title {
+			text-align: center;
+			margin: auto;
+			margin-bottom: .5rem;
+			@include media-breakpoint-up (md) {
+			text-align: left;
+			margin-bottom: 0rem;
+			margin: unset;
+			};
+		}
+	}
+	.btn-primary {
+		min-width: auto;
+		padding: .3rem 1rem;
+		@include media-breakpoint-up (md) {
+		min-width: 100%
+		};
+
+	}
 }
