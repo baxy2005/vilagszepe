@@ -101,6 +101,9 @@ main card
 		};
 	}
 }
+.card-deck .card--main:only-child{
+	flex: 0 0 50%;
+}
 
 /*-------------------------------------------
 gallery card
@@ -450,4 +453,7 @@ other documents
 		};
 
 	}
+}
+.card--logos {
+	height: 100%;
 }
