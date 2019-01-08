@@ -27,7 +27,7 @@ bacground colors
 	color: $color-tertiary !important
 }
 .overlay {
-	@include absoluteCenter(fixed, 0, 0, 0, 0,)
+	@include absoluteCenter(fixed, 0, 0, 0, 0,);
 	background: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100vh;
@@ -57,7 +57,7 @@ h1, h2, h3 {
 	letter-spacing: 1px;
 }
 
-h1, h2, {
+h1, h2 {
 	color: $color-primary;
 	margin-bottom: 2rem;
 }

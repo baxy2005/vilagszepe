@@ -446,7 +446,7 @@ other documents
 		}
 	}
 	.btn-primary {
-		min-width: auto;
+//		min-width: auto;
 		padding: .3rem 1rem;
 		@include media-breakpoint-up (md) {
 		min-width: 100%
@@ -456,4 +456,10 @@ other documents
 }
 .card--logos {
 	height: 100%;
+}
+
+.card--front {
+	h1.card-title {
+		font-size: 1.8rem;
+	}
 }
