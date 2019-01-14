@@ -1,9 +1,9 @@
-//.modal {
-//	left: 0;
-//	@include media-breakpoint-up (lg) {
-//		left: 288px;
-//	};
-//}
+.modal {
+	left: 0;
+	@include media-breakpoint-up (lg) {
+		left: 288px;
+	};
+} 
 .modal-dialog {
 	max-width: 100%;
 	margin: 0.5rem;
