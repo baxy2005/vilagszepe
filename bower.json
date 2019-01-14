@@ -1,5 +1,5 @@
 {
-  "name": "workflow",
+  "name": "workflow", 
   "description": "",
   "main": "index.js",
   "authors": [
@@ -25,6 +25,6 @@
     "jasny-bootstrap": "^3.1.3"
   },
   "devDependencies": {
-    "bootstrap": "^4.1.0"
+    "bootstrap": "4.1.0"
   }
 }

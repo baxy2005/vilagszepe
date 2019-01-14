@@ -6,12 +6,14 @@ var minifyCss = require('gulp-minify-css');
 var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
-
+var sourcemaps = require('gulp-sourcemaps');
 // Compile sass
 gulp.task('sass', function () {
   gulp.src('components/stylesheet/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
 });
