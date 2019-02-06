@@ -39,7 +39,7 @@ gulp.task('watch', function() {
 
 // Uglify Plugins
 gulp.task('uglifyPlugins', function() {
-  return gulp.src(['components/libs/jquery/dist/jquery.js', 'components/libs/popper.js/dist/umd/popper.js', 'components/libs/owl.carousel/dist/owl.carousel.js', 'components/libs/bootstrap/dist/js/bootstrap.js', 'components/libs/gsap/src/uncompressed/TweenMax.js', 'components/libs/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js', 'components/libs/jasny-bootstrap/dist/js/jasny-bootstrap.js', 'components/libs/responsive-tabs/jquery.responsivetabs.js'])
+  return gulp.src(['components/libs/jquery/dist/jquery.js', 'components/libs/popper.js/dist/umd/popper.js', 'components/libs/owl.carousel/dist/owl.carousel.js', 'components/libs/bootstrap/dist/js/bootstrap.js', 'components/libs/gsap/src/uncompressed/TweenMax.js', 'components/libs/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js', 'components/libs/jasny-bootstrap/dist/js/jasny-bootstrap.js', 'components/libs/responsive-tabs/jquery.responsivetabs.js', 'components/libs/jQuery-rwdImageMaps-master/jquery.rwdImageMaps.js'])
 /*    .pipe(rename({
       suffix: ".min",
       extname: ".js"

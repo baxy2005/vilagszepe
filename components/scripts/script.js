@@ -205,6 +205,8 @@ if ( $(window).width() < 992 ) {
     }, false);
   });
 
+  $('img[usemap]').rwdImageMaps();
+
 });
 $(window).resize(function() {
     if ( $(window).width() < 576 ) {
